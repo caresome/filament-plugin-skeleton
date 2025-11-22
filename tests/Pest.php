@@ -1,7 +1,7 @@
 <?php
 
-use Caresome\FilamentPluginSkeleton\Tests\TestCase;
+use Caresome\FilamentNeobrutalism\Tests\TestCase;
 
 uses(TestCase::class)->in('Feature');
 
-pest()->project()->github('caresome/skeleton');
+pest()->project()->github('caresome/filament-neobrutalism-theme');

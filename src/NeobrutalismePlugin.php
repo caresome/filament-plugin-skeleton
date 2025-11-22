@@ -1,15 +1,15 @@
 <?php
 
-namespace Caresome\FilamentPluginSkeleton;
+namespace Caresome\FilamentNeobrutalism;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
-class SkeletonPlugin implements Plugin
+class NeobrutalismePlugin implements Plugin
 {
     public function getId(): string
     {
-        return 'skeleton';
+        return 'filament-neobrutalism';
     }
 
     public function register(Panel $panel): void

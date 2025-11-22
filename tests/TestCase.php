@@ -1,8 +1,8 @@
 <?php
 
-namespace Caresome\FilamentPluginSkeleton\Tests;
+namespace Caresome\FilamentNeobrutalism\Tests;
 
-use Caresome\FilamentPluginSkeleton\SkeletonServiceProvider;
+use Caresome\FilamentNeobrutalism\NeobrutalismeServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -13,14 +13,14 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Caresome\\FilamentPluginSkeleton\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Caresome\\FilamentNeobrutalism\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            SkeletonServiceProvider::class,
+            NeobrutalismeServiceProvider::class,
         ];
     }
 
