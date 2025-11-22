@@ -1,20 +1,19 @@
 {
-    "name": "caresome/filament-neobrutalism-theme",
-    "description": "A neobrutalism theme for FilamentPHP admin panels",
+    "name": "caresome/skeleton",
+    "description": "A skeleton for creating FilamentPHP plugins",
     "keywords": [
         "caresome",
         "laravel",
         "filament",
         "filament-plugin",
-        "filament-theme",
-        "neobrutalism"
+        "skeleton"
     ],
-    "homepage": "https://github.com/caresome/filament-neobrutalism-theme",
+    "homepage": "https://github.com/caresome/skeleton",
     "license": "MIT",
     "authors": [
         {
             "name": "Caresome",
-            "email": "caresome@proton.me",
+            "email": "dev@caresome.app",
             "role": "Developer"
         }
     ],
@@ -39,12 +38,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Caresome\\FilamentNeobrutalism\\": "src/"
+            "Caresome\\FilamentPluginSkeleton\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Caresome\\FilamentNeobrutalism\\Tests\\": "tests/",
+            "Caresome\\FilamentPluginSkeleton\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -66,7 +65,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Caresome\\FilamentNeobrutalism\\NeobrutalismeServiceProvider"
+                "Caresome\\FilamentPluginSkeleton\\SkeletonServiceProvider"
             ]
         }
     },
